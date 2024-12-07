@@ -1,11 +1,11 @@
 import streamlit as st
 import tensorflow as tf
 from PIL import Image
-import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.resnet50 import preprocess_input
+import cv2
 
 st.set_page_config(page_title="AgriPathogen Alert", page_icon=":tada:", layout="wide")
 
