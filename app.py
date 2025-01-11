@@ -41,10 +41,10 @@ def predict(model, img):
     img_array = np.expand_dims(img_array, 0)
     img_array = preprocess_input(img_array)
     predictions = model.predict(img_array)
-    class_names = ['Tomato__YellowLeaf__Curl__Virus',
-                    'Tomato__Bacterial__Spot',
+    class_names = ['Tomato__Bacterial__Spot',
                     'Tomato__Healthy',
-                    'Tomato__Mosaic__Virus']
+                    'Tomato__Mosaic__Virus',
+                    'Tomato__YellowLeaf__Curl__Virus']
     predicted_class = class_names[np.argmax(predictions[0])]
     confidence = round(100 * (np.max(predictions[0])), 2)
     return predicted_class, confidence
