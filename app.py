@@ -2,9 +2,9 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.models import load_model # type: ignore
+from tensorflow.keras.preprocessing import image # type: ignore
+from tensorflow.keras.applications.resnet50 import preprocess_input # type: ignore
 import cv2
 
 st.set_page_config(page_title="AgriPathogen Alert", page_icon=":tada:", layout="wide")
@@ -12,7 +12,7 @@ st.set_page_config(page_title="AgriPathogen Alert", page_icon=":tada:", layout="
 #header
 with st.container():
     st.title("AgriPathogen Alert :tomato:")
-    st.write("A tomato disease prediction system using machine learning (ML) is a system that uses algorithms to analyze data from potato crops and predict the likelihood of certain diseases occurring. The system uses various ML techniques, such as decision trees, neural networks, or support vector machines, to analyze the data and make predictions. These predictions can then be used to inform farmers and agricultural professionals on how to best protect their crops and prevent disease outbreaks.")
+    st.write("A tomato disease prediction system using machine learning (ML).")
 
 with st.container():
     st.write("---")
