@@ -41,8 +41,8 @@ def predict(model, img):
     img_array = np.expand_dims(img_array, 0)
     img_array = preprocess_input(img_array)
     predictions = model.predict(img_array)
-    class_names = ['Tomato__Bacterial__Spot',
-                    'Tomato__Healthy',
+    class_names = ['Tomato__Healthy',
+                    'Tomato__Bacterial__Spot',
                     'Tomato__Mosaic__Virus',
                     'Tomato__YellowLeaf__Curl__Virus']
     predicted_class = class_names[np.argmax(predictions[0])]
