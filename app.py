@@ -5,7 +5,7 @@ import numpy as np
 from tensorflow.keras.models import load_model # type: ignore
 from tensorflow.keras.preprocessing import image # type: ignore
 from tensorflow.keras.applications.resnet50 import preprocess_input # type: ignore
-import cv2
+
 
 st.set_page_config(page_title="AgriPathogen Alert", page_icon=":tada:", layout="wide")
 
